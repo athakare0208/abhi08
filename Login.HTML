@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            outline: 0px;
+        }
+        .nav{
+            width: 100%;
+            height: 12vh;
+            background-color: #FFFFF7;
+        }
+        .logo{
+            width: 25%;
+        }
+        .logo img{
+            
+            height:4vh;
+            position: relative;
+            top: 4vh;
+            left: 20px;
+            border-radius: 5px;
+        }
+        .title{
+            margin-top: 3%;
+            margin-left: 2%;
+            font-size: 30px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(78, 77, 77);
+        }
+        
+        .bg{
+            background-image: url("https://www.myaudiconnect.com/content/img/bg.jpg");
+            width: 100%;
+            height: 70vh;
+            margin-top: 2%;
+        }
+        .h4{
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            position: relative;
+            top: 2%;
+            left: 5%;
+        }
+        
+        .form{
+            width: 32%;
+            height: 45vh;
+            background-color: #FFFFF7;
+            margin-left: 66%;
+            display: flex;
+            flex-direction: column;
+        }
+        .text{
+            position: relative;
+            top:10%;
+            left: 5%;
+            font-size: 15px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgb(63, 62, 62);
+        }
+        .inp{
+            width: 90%;
+            height: 5vh;
+            position: relative;
+            top: 12%;
+            left: 5%;
+            font-size: 15px;
+            border: none;
+            border-bottom: 1px solid grey;
+            text-indent: 20px;
+        }
+        .text1{
+            position: relative;
+            top:18%;
+            left: 5%;
+            font-size: 15px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgb(63, 62, 62);
+        }
+        .inp1{
+            width: 90%;
+            height: 5vh;
+            position: relative;
+            top: 20%;
+            left: 5%;
+            font-size: 15px;
+            border: none;
+            border-bottom: 1px solid grey;
+            text-indent: 20px;
+
+        }
+        /* ::placeholder{
+            padding-left: 20px;
+        } */
+        .form a{
+            position: relative;
+            top: 25%;
+            left: 5%;
+            font-size: 12px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            text-decoration: none;
+            color: black;
+            line-height: 140%;
+        }
+        .form a:hover{
+            color: red;
+            /* text-decoration: none; */
+        }
+        .btn{
+            position: relative;
+            top: 30%;
+            left: 5%;
+            width: 20%;
+            height: 5vh;
+            background: transparent;
+            border: 1px solid black;
+            font-size: 14px;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .bg1{
+            width: 100%;
+            height: 55vh;
+            /* background-color: steelblue; */
+            margin-top: 4%;
+            display: flex;
+            flex-direction: row;
+        }
+        .s1{
+            width: 30%;
+            height: 60vh;
+            /* background-color: tomato; */
+            margin-left: 3%;
+            display: flex;
+            flex-direction: column;
+        }
+        .s2{
+            width: 30%;
+            height: 60vh;
+            /* background-color:cadetblue; */
+            margin-left: 2%;
+            display: flex;
+            flex-direction: column;
+        }
+        .s3{
+            width: 30%;
+            height: 60vh;
+            /* background-color:violet; */
+            margin-left: 2%;
+            display: flex;
+            flex-direction: column;
+        }
+        .it{
+            font-size: 15px;
+            font-family:Arial, Helvetica, sans-serif;
+            position: relative;
+            top: 4%;
+        }
+        .it1{
+            position: relative;
+            top: 10%;
+            font-size: 13px;
+            font-family:Arial, Helvetica, sans-serif;
+            color: rgb(90, 89, 89);
+        }
+        .baner5{
+            width: 100%;
+            height: 50vh;
+            margin-top: 3%;
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+        }
+        .c8{
+            width: 25%;
+            height: 50vh;
+            /* background-color: red; */
+            display: flex;
+            flex-direction: column;
+        }
+        .h1{
+            color: white;
+            position: relative;
+            top: 20%;
+            left: 25%;
+            font-size: 30px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .h2{
+            position: relative;
+            top:28%;
+            left: 25%;
+            font-size: 14px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            line-height: 300%;
+        }
+        .c9{
+            width: 25%;
+            height: 50vh;
+            /* background-color: blue; */
+            display: flex;
+            flex-direction: column;
+        }
+        .c10{
+            width: 25%;
+            height: 50vh;
+            /* background-color: orangered; */
+            display: flex;
+            flex-direction: column;
+        }
+        .c11{
+            width: 25%;
+            height: 50vh;
+            /* background-color: blueviolet; */
+            display: flex;
+            flex-direction: row;
+        }
+        .c11 img{
+            width: 10%;
+            height: 4vh;
+            position: relative;
+            top: 5%;
+            left: 8%;
+            padding: 18px;
+            border-radius: 22px;
+        }
+        .baner6{
+            width: 100%;
+            height: 60vh;
+            background-color: black;
+        }
+        .l1{
+            color: white;
+            position: relative;
+            top: 3%;
+            margin-left: 5%;
+            font-size: 13px;
+            line-height: 170%;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .l2{
+            color: white;
+            position: relative;
+            top: 10%;
+            margin-left: 5%;
+            font-size: 13px;
+            line-height: 170%;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .l3{
+            color: white;
+            position: relative;
+            top: 15%;
+            margin-left: 5%;
+            font-size: 13px;
+            line-height: 170%;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+        }
+        .l3 a{
+            color: white;
+            font-size: 13px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .l3 a:hover{
+            color: gray;
+        }
+        .l4{
+            color: white;
+            position: relative;
+            top: 20%;
+            margin-left: 5%;
+            font-size: 13px;
+            line-height: 170%;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+        }
+        .l4 a{
+            color: white;
+            font-size: 13px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .l4 a:hover{
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo"><img src="https://s.yimg.com/fz/api/res/1.2/THCyMkmG3Q53I95wvXivHg--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MzMy/https://s.yimg.com/zb/imgv1/5f784889-bfec-3332-a0a8-3ce21c8a0538/t_500x300" alt="Img"></div>
+    </div>
+    <hr>
+    <p class="title">Login</p>
+    <!-- <img src="https://www.myaudiconnect.com/content/img/bg.jpg" alt="IMG" class="pho">
+    <div class="form"></div> -->
+    <div class="bg">
+       <form class="form">
+            <p class="h4">Login</p>
+            <p class="text">E-mail</p>
+            <input type="email" placeholder="E-mail" class="inp">
+            <p class="text1">Password</p>
+            <input type="password" placeholder="Enter Password" class="inp1">
+            <a href="#"><b>Forget Password?</b></a>
+            <a href="#"><b>Need an account?</b></a>
+            <button class="btn">Login</button>
+       </form>
+    </div>
+    <div class="bg1">
+        <div class="s1">
+            <img src="https://www.myaudiconnect.com/content/img/what-is-audi-connect.png" alt="Img" class="img">
+            <p class="it"><b>What is Audi connect®?</b></p>
+            <p class="it1">Audi connect® with Google Earth™ satellite imagery is your guide to <br> places of interest, travel information, weather reports, fuel prices and <br> more. You can even send destinations with your myAudi account on <br>your desktop straight to your car.</p>
+        </div>
+        <div class="s2">
+            <img src="https://www.myaudiconnect.com/content/img/google-voice-local-search.png" alt="Img" class="img">
+            <p class="it"><b>Google Voice™ Local Search</b></p>
+            <p class="it1">With the power of Google™ on the tip of your tongue, Audi connect® brings a vast internet database to you with the advanced engineering and style of Audi. Looking for a meal with a little kick? Just ask for “spicy chicken”—Google™ will populate your navigation display with restaurants or descriptions that match the phrase you speak.</p>
+        </div>
+        <div class="s3">
+            <img src="https://www.myaudiconnect.com/content/img/in-car-wi-fi.jpg" alt="Img" class="img">
+            <p class="it"><b>In-Car Wi-Fi</b></p>
+            <p class="it1">With Audi connect®, you can turn your Audi into a mobile Wi-Fi hotspot which allows up to eight passenger devices to connect to the internet simultaneously.</p>
+        </div>
+    </div>
+    <div class="baner5">
+        <div class="c8">
+            <p  class="h1">Topics</p>
+            <p class="h2">Company</p>
+            <p class="h2">Innovation</p>
+            <p class="h2">Models</p>
+            <p class="h2">Brands</p>
+            <p class="h2">Career</p>
+        </div>
+        <div class="c9">
+            <p class="h1">AUDI AG</p>
+            <p class="h2">Audi Reports 2022</p>
+            <p class="h2">Documents & Policies</p>
+            <p class="h2">Financial Calender</p>
+            <p class="h2">Profile</p>
+        </div>
+        <div class="c10">
+            <p class="h1">Services</p>
+            <p class="h2">myAudi</p>
+            <p class="h2">Press</p>
+            <p class="h2">Contact</p>
+            <p class="h2">Job portal</p>
+        </div>
+        <div class="c11"><img src="https://tse1.mm.bing.net/th?id=OIP.yLx1X8O52AZvD6tTPmf3LgAAAA&pid=Api&P=0&h=220" alt="Img"> <img src="https://cdn.freebiesupply.com/images/large/2x/instagram-logo-white-on-black.png" alt="Img"> <img src="http://www.freeiconspng.com/uploads/images-for--facebook-icon-png-27.png" alt="Img"> <img src="https://logodix.com/logo/395125.png" alt="Img"></div>
+    </div>
+    <div class="baner6">
+        <p class="l1">* The stated consumption and emissions values were determined in accordance with the legally stipulated measurement procedure. The WLTP test cycle completely replaced the NEDC test cycle with effect <br> from 1 January 2022. As a result, no NEDC values are available for vehicles with a type approval issued after this date.</p>
+        <p class="l2">The values do not refer to an individual vehicle and are not part of the offer; instead, they are solely for the purpose of comparing between different types of vehicles. Optional equipment and accessories <br>(attachments, tyre formats etc.) may alter relevant vehicle parameters such as the weight, rolling resistance and aerodynamics and, alongside weather and traffic conditions and individual driving behaviour, <br>may influence the fuel consumption, electricity consumption, CO2 emissions and performance values of a vehicle.</p>
+        <p class="l3">Due to the more realistic test conditions, fuel consumption and CO2 emissions values will in many cases be higher in accordance with the WLTP than in accordance with the NEDC. There may have been <br>corresponding changes to vehicle taxation since 1 September 2018 as a result of this. You can find further information on the differences between the WLTP and the NEDC at <a href="https://www.audi.co.uk/uk/web/en/audi-world/wltp.html">https://www.audi.co.ul/wltp.</a></p>
+        <p class="l4">Further information on the official fuel consumption and the official, specific CO2 emissions of new passenger car models can be found in the “Guide on the fuel economy, CO2 emissions and power <br>consumption of all new passenger car models”, available free of charge from all sales outlets and from DAT Deutsche Automobil Treuhand GmbH, Hellmuth-Hirth-Str. 1, 73760 Ostfildern, <br>Germany or desktop-wallpaper-abt-audi-rs6-s-audi-rs6-a  <a href="https://www.dat.de/">www.dat.de.</a></p>
+    </div>
+</body>
+</html>

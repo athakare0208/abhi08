@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Models</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            outline: 0px;
+        }
+        .nav{
+            width: 100%;
+            height: 12vh;
+            display: flex;
+            flex-direction: row;
+            background-color: #FFFFF7;
+            
+        }
+        .logo{
+            width: 25%;
+        }
+        .logo img{
+            height:4vh;
+            position: relative;
+            top: 4vh;
+            left: 20px;
+            border-radius: 5px;
+        }
+        .menu{
+            display: flex;
+            flex-direction: row;
+            width: 40%;
+            justify-content: space-around;
+            font-size: 20px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            position: relative;
+            top: 28px;
+            right: 15%;
+            
+        }
+        .menu a{
+            color: rgb(56, 54, 54);
+            text-decoration: none;
+        }
+        .menu  a:hover{
+            color: black;
+        }
+        .P{
+            width: 100%;
+        }
+        .P img{
+            width: 100%;
+            height: 80vh;
+        }
+        .P1{
+            position: absolute;
+            top: 30%;
+            text-align: center;
+            margin-left: 10%;
+            font-size: 70px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white;
+        }
+        .P2{
+            text-align: center;
+            position: relative;
+            top: 20px;
+            font-size: 11px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            line-height: 190%;
+        }
+        .P3{
+            margin-top: 8%;
+            text-align: center;
+            font-size: 70px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .P4{
+            text-align: center;
+            margin-top: 3%;
+            font-size: 28px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .bp{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 70vh;
+            /* background-color: steelblue; */
+            margin-top: 5%;
+        }
+        .R{
+            width: 50%;
+            height: 70vh;
+            /* background-color: violet; */
+        }
+        .n{
+            position: relative;
+            top: 10%;
+            left: 12%;
+            font-size: 25px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .n1{
+            position: relative;
+            top: 15%;
+            left: 12%;
+            font-size: 18px;
+            line-height: 140%;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .btn{
+            position: relative;
+            top: 25%;
+            left: 12%;
+            width: 30%;
+            height: 8vh;
+            font-size: 18px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background: transparent;
+            border: 1px solid black;
+
+        }
+        .btn a{
+            color: black;
+            text-decoration: none;
+        }
+        .btn a:hover{
+            color: rgb(65, 63, 63);
+        }
+        .n2{
+            position: relative;
+            top: 30%;
+            left: 12%;
+            font-size: 14px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            line-height: 150%;
+        }
+        .n3{
+            position: relative;
+            top: 32%;
+            left: 12%;
+            font-size: 14px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            
+        }
+        .n4{
+            position: relative;
+            top: 34%;
+            left: 12%;
+            font-size: 14px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            
+        }
+        .L{
+            width: 50%;
+            height: 70vh;
+            /* background-color: burlywood; */
+        }
+        .PH{
+            width: 90%;
+            position: relative;
+            left: 5%;
+            margin-top: 5%;
+        }
+        .bp1{
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            margin-left: 5%;
+            height: 100vh;
+            /* background-color: steelblue; */
+            margin-top: 5%;
+        }
+        .R1{
+            width: 50%;
+            height: 100vh;
+            /* background-color: violet; */
+        }
+        .PH1{
+            width: 100%;
+            height: 100vh;
+        }
+        .baner5{
+            width: 100%;
+            height: 50vh;
+            margin-top: 3%;
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+        }
+        .c8{
+            width: 25%;
+            height: 50vh;
+            /* background-color: red; */
+            display: flex;
+            flex-direction: column;
+        }
+        .h1{
+            color: white;
+            position: relative;
+            top: 20%;
+            left: 25%;
+            font-size: 30px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .h2{
+            position: relative;
+            top:28%;
+            left: 25%;
+            font-size: 14px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            line-height: 300%;
+        }
+        .c9{
+            width: 25%;
+            height: 50vh;
+            /* background-color: blue; */
+            display: flex;
+            flex-direction: column;
+        }
+        .c10{
+            width: 25%;
+            height: 50vh;
+            /* background-color: orangered; */
+            display: flex;
+            flex-direction: column;
+        }
+        .c11{
+            width: 25%;
+            height: 50vh;
+            /* background-color: blueviolet; */
+            display: flex;
+            flex-direction: row;
+        }
+        .c11 img{
+            width: 10%;
+            height: 4vh;
+            position: relative;
+            top: 5%;
+            left: 8%;
+            padding: 18px;
+            border-radius: 22px;
+        }
+        .baner6{
+            width: 100%;
+            height: 60vh;
+            background-color: black;
+        }
+        .l1{
+            color: white;
+            position: relative;
+            top: 3%;
+            margin-left: 5%;
+            font-size: 13px;
+            line-height: 170%;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .l2{
+            color: white;
+            position: relative;
+            top: 10%;
+            margin-left: 5%;
+            font-size: 13px;
+            line-height: 170%;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .l3{
+            color: white;
+            position: relative;
+            top: 15%;
+            margin-left: 5%;
+            font-size: 13px;
+            line-height: 170%;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+        }
+        .l3 a{
+            color: white;
+            font-size: 13px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .l3 a:hover{
+            color: gray;
+        }
+        .l4{
+            color: white;
+            position: relative;
+            top: 20%;
+            margin-left: 5%;
+            font-size: 13px;
+            line-height: 170%;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+        }
+        .l4 a{
+            color: white;
+            font-size: 13px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .l4 a:hover{
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo"><img src="https://s.yimg.com/fz/api/res/1.2/THCyMkmG3Q53I95wvXivHg--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MzMy/https://s.yimg.com/zb/imgv1/5f784889-bfec-3332-a0a8-3ce21c8a0538/t_500x300" alt="Img"></div>
+        <div class="menu">
+            <div><a href="#">Company</a></div>
+            <div><a href="#">Innovation</a></div>
+            <div><a href="#">Models</a></div>
+            <div><a href="#">Brand</a></div>
+            <div><a href="#">Carrers</a></div>
+        </div>
+    </div>
+    <img src="https://www.audi.com/content/dam/gbp2/innovation/e-mobility/2022/clear-course-towards-e-mobility/1920x600-desktop-e-tron-range-4069-stage.jpg?imwidth=1920&imdensity=1" alt="Img" class="P">
+    <div class="P1">At Audi you’ll find the right vehicle for <br> every requirement</div>
+    <p class="P2">Audi RS e-tron GT:&nbsp;&nbsp;Power consumption (combined*) in kWh/100 km: 22.1–19.8CO₂ emissions (combined*) in g/km: 0 <br>
+        Information on fuel/power consumption and CO₂ emissions with ranges depending on the selected equipment of the vehicle. <br>
+        Only consumption and emission values according to WLTP and not according to NEDC are available for the vehicle. <br>
+        The vehicle shown (left) is a concept vehicle that is not available as a production vehicle.</p>
+    <p class="P3">Discover our current models</p>
+    <p class="P4">You will find detailed information about all models, as well as current <br> offers on our new and used cars, on your Audi country-specific website. <br> With the new digital Audi Live consultation and the new Audi Live <br> configuration, you can get advice on your dream Audi from the comfort of <br> your own home.</p>
+    <div class="bp">
+        <div class="R">
+            <p class="n">All models at a glance</p>
+            <p class="n1">Sporty, luxurious, or compact – at Audi you will find the right vehicle for <br> every requirement. Discover and configure our series models now.</p>
+            <button class="btn"><a href="#">Discover  all models</a></button>
+            <p class="n2">Audi Q8 e-tron:&nbsp; Power consumption (combined*) in kWh/100 km: 24.4–20.1CO₂ <br> emissions (combined*) in g/km: 0</p>
+            <p class="n3">Information on fuel/power consumption and CO₂ emissions with ranges depending on the selected <br> equipment of the vehicle.</p>
+            <p class="n4">Only consumption and emission values according to WLTP and not according to NEDC are available for <br> the vehicle.</p>
+        </div>
+        <div class="L">
+            <img src="https://www.audi.com/content/dam/gbp2/models/1920x1080_q8e_2022_4679.jpg?imwidth=792&imdensity=1" alt="Img" class="PH">
+        </div>
+    </div>
+    <div class="bp1">
+        <div class="R1">
+            <img src="https://www.audi.com/content/dam/gbp2/models/1920x1920-desktop-models-teaser-RSeGT_2021_2351_V1.jpg?imwidth=792&imdensity=1" alt="Img" class="PH1">
+        </div>
+        <div class="L1">
+            <p class="n">The Audi RS e-tron GT: pure energy and <br> progressive performance</p>
+            <p class="n1">The Audi e-tron GT is a modern-day demonstration of progress. It <br> simultaneously radiates sportiness, high quality, and comfort. Its <br> aerodynamic design and ‘gran turismo’ concept are sure to attract admiring <br> glances. Driving it is a fascinating and thoroughly emotional experience.</p>
+            <button class="btn"><a href="Discover.html">Discover it now</a></button>
+            <p class="n2">Audi RS e-tron GT:&nbsp; Power consumption (combined*) in kWh/100 km: 22.1–19.8CO₂ <br> emissions (combined*) in g/km: 0</p>
+            <p class="n3">Information on fuel/power consumption and CO₂ emissions with ranges depending on the selected <br> equipment of the vehicle.</p>
+            <p class="n4">Only consumption and emission values according to WLTP and not according to NEDC are available for the <br> vehicle.</p>
+        </div>
+    </div>
+    <div class="bp1">
+        <div class="R1">
+            <p class="n">Fully electric. And full of wonderful details</p>
+            <p class="n1">Now that the Audi e-tron Sportback has fulfilled its pioneering role as <br> an all-electric vehicle, it has also joined the ranks of Audi models <br> by name – as the Audi Q8 Sportback e-tron.</p>
+            <button class="btn"><a href="Discover.html">Discover it now</a></button>
+            <p class="n2">Audi Q8 Sportback e-tron:Power consumption (combined*) in kWh/100 km: 24.1–19.5CO₂ <br> emissions (combined*) in g/km: 0</p>
+            <p class="n3">Information on fuel/power consumption and CO₂ emissions with ranges depending on <br> the selected equipment of the vehicle.</p>
+            <p class="n4">Only consumption and emission values according to WLTP and not according to NEDC <br> are available for the vehicle.</p>
+        </div>
+        <div class="L1">
+            <img src="https://www.audi.com/content/dam/gbp2/models/1920x1920_Q8e_2022_4444_without_Cast.jpg?imwidth=792&imdensity=1" alt="Img" class="PH1">
+        </div>
+    </div>
+    <div class="bp1">
+        <div class="R1">
+            <img src="https://www.audi.com/content/dam/gbp2/models/1920x1920-desktop-models-teaser-q4_2021_2516.jpg?imwidth=792&imdensity=1" alt="Img" class="PH1">
+        </div>
+        <div class="L1">
+            <p class="n">Inspiration becomes the future: the Q4 e-tron <br> Sportback</p>
+            <p class="n1">The clear design of the Audi Q4 e-tron Sportback, with its focused front and <br> powerful rear, gives a characteristic shape to the future of electric mobility. <br> The Audi Q4 e-tron Sportback’s progressive interior is characterized by <br> technological innovation, sportiness, and functionality.</p>
+            <button class="btn"><a href="Discover.html">Discover it now</a></button>
+            <p class="n2">Audi Q4 Sportback e-tron:&nbsp; Power consumption (combined*) in kWh/100 km: 19.7–16.1CO₂ <br> emissions (combined*) in g/km: 0</p>
+            <p class="n3">Information on fuel/power consumption and CO₂ emissions with ranges depending on <br> the selected equipment of the vehicle.</p>
+            <p class="n4">Only consumption and emission values according to WLTP and not according to NEDC <br> are available for the vehicle.</p>
+        </div>
+    </div>
+    <div class="baner5">
+        <div class="c8">
+            <p  class="h1">Topics</p>
+            <p class="h2">Company</p>
+            <p class="h2">Innovation</p>
+            <p class="h2">Models</p>
+            <p class="h2">Brands</p>
+            <p class="h2">Career</p>
+        </div>
+        <div class="c9">
+            <p class="h1">AUDI AG</p>
+            <p class="h2">Audi Reports 2022</p>
+            <p class="h2">Documents & Policies</p>
+            <p class="h2">Financial Calender</p>
+            <p class="h2">Profile</p>
+        </div>
+        <div class="c10">
+            <p class="h1">Services</p>
+            <p class="h2">myAudi</p>
+            <p class="h2">Press</p>
+            <p class="h2">Contact</p>
+            <p class="h2">Job portal</p>
+        </div>
+        <div class="c11"><img src="https://tse1.mm.bing.net/th?id=OIP.yLx1X8O52AZvD6tTPmf3LgAAAA&pid=Api&P=0&h=220" alt="Img"> <img src="https://cdn.freebiesupply.com/images/large/2x/instagram-logo-white-on-black.png" alt="Img"> <img src="http://www.freeiconspng.com/uploads/images-for--facebook-icon-png-27.png" alt="Img"> <img src="https://logodix.com/logo/395125.png" alt="Img"></div>
+    </div>
+    <div class="baner6">
+        <p class="l1">* The stated consumption and emissions values were determined in accordance with the legally stipulated measurement procedure. The WLTP test cycle completely replaced the NEDC test cycle with effect <br> from 1 January 2022. As a result, no NEDC values are available for vehicles with a type approval issued after this date.</p>
+        <p class="l2">The values do not refer to an individual vehicle and are not part of the offer; instead, they are solely for the purpose of comparing between different types of vehicles. Optional equipment and accessories <br>(attachments, tyre formats etc.) may alter relevant vehicle parameters such as the weight, rolling resistance and aerodynamics and, alongside weather and traffic conditions and individual driving behaviour, <br>may influence the fuel consumption, electricity consumption, CO2 emissions and performance values of a vehicle.</p>
+        <p class="l3">Due to the more realistic test conditions, fuel consumption and CO2 emissions values will in many cases be higher in accordance with the WLTP than in accordance with the NEDC. There may have been <br>corresponding changes to vehicle taxation since 1 September 2018 as a result of this. You can find further information on the differences between the WLTP and the NEDC at <a href="https://www.audi.co.uk/uk/web/en/audi-world/wltp.html">https://www.audi.co.ul/wltp.</a></p>
+        <p class="l4">Further information on the official fuel consumption and the official, specific CO2 emissions of new passenger car models can be found in the “Guide on the fuel economy, CO2 emissions and power <br>consumption of all new passenger car models”, available free of charge from all sales outlets and from DAT Deutsche Automobil Treuhand GmbH, Hellmuth-Hirth-Str. 1, 73760 Ostfildern, <br>Germany or desktop-wallpaper-abt-audi-rs6-s-audi-rs6-a  <a href="https://www.dat.de/">www.dat.de.</a></p>
+    </div>
+</body>
+</html>

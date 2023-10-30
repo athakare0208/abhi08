@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The AUDI</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            outline: 0px;
+        }
+        .nav{
+            width: 100%;
+            height: 12vh;
+            display: flex;
+            flex-direction: row;
+            background-color: #FFFFF7;
+            /* position: fixed; */
+        }
+        .logo{
+            width: 25%;
+        }
+        .logo img{
+            
+            height:4vh;
+            position: relative;
+            top: 4vh;
+            left: 20px;
+            border-radius: 5px;
+        }
+        .menu{
+            display: flex;
+            flex-direction: row;
+            width: 40%;
+            justify-content: space-around;
+            font-size: 20px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            position: relative;
+            top: 28px;
+            right: 15%;
+            /* position: fixed; */
+        }
+        .menu a{
+            color: rgb(56, 54, 54);
+            text-decoration: none;
+        }
+        .menu  a:hover{
+            color: black;
+        }
+        
+        .baner img{
+            width: 100%;
+            height: 88vh;
+        }
+        .content{
+            position: absolute;
+            top: 25%;
+            margin-left: 19%;
+            /* left: 19%; */
+            font-size: 70px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color:white;
+        }
+        .content1{
+            position: absolute;
+            top: 42%;
+            margin-left: 26%;
+            /* left: 26%; */
+            color: white;
+            font-size: 22px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .btn{
+            width: 15%;
+            height: 8vh;
+            background: transparent;
+            border: 2px solid white;
+            font-size: 16px;
+            position: absolute;
+            top: 52%;
+            left: 42%;            
+        }
+        .btn a{
+            color: white;
+            text-decoration: none;
+        }
+        .con{
+            line-height: 25px;
+           text-align: center;
+           font-size: 14px;
+           font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           margin-top: 1%;
+        }
+        .con1{
+            margin-top: 10%;
+            text-align: center;
+            font-size: 45px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .baner1{
+            width: 100%;
+            height: 80vh;
+            /* background-color: cadetblue; */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .c1{
+            width: 30%;
+        }
+        .c1{
+            /* display: flex;
+            flex-direction: row; */
+            height: 70vh;
+            /* background-color: slateblue; */
+            position: relative;
+            top: 6%;
+            overflow: hidden;
+        }
+        .c1 img{
+            width: 100%;
+            height: 35vh;
+            display: block;
+            transition: 2s;
+        }
+        .c1:hover img{
+            transform: scale(1.2);
+            overflow: hidden;
+        }
+        .itm{
+            position: relative;
+            top: 5%;
+            margin-left: 5%;
+            font-size: 16px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: gray;
+        }
+        .itm1{
+            position: relative;
+            top: 6%;
+            left: 6%;
+            font-size: 32px;
+            font-family: cursive;
+        }
+        .itm2{
+            position: relative;
+            top: 8%;
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+               
+        }
+        .baner2{
+            width: 100%;
+            height: 60vh;
+            /* background-color: thistle; */
+            display: flex;
+            flex-direction: row;
+        }
+        .c2{
+            width: 45%;
+            height: 60vh;
+            /* background-color: steelblue; */
+
+        }
+        .Itm{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            
+            top: 15%;
+            margin-left: 10%;
+            
+            font-size: 30px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .Itm1{
+            position: relative;
+            top: 20%;
+            margin-left: 10%;
+            font-size: 18px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            line-height: 150%;
+        }
+        .Itm2{
+            width: 40%;
+            height: 10vh;
+            position: relative;
+            top: 30%;
+            left: 10%;
+            background: transparent;
+            border: 2px solid black;
+            font-size: 20px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .Itm2 a{
+            color: black;
+            text-decoration: none;
+        }
+        .Itm3{
+            position: relative;
+            top: 35%;
+            left: 10%;
+            font-size: 12px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .c3 img{
+            width: 120%;
+            height: 55vh;
+        }
+        .Itm4 img{
+            padding-top: 5%;
+            width: 100%;
+            height: 80vh;
+        }
+        .Itm5{
+            padding-left: 10%;
+            font-size: 18px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+        .baner3{
+            width: 100%;
+            height: 60vh;
+            /* background-color: thistle; */
+            display: flex;
+            flex-direction: row;
+            margin-top: 4%;
+        }
+        .c4{
+            width: 50%;
+            height: 60vh;
+            /* background-color: red; */
+        }
+        .c4 img{
+            width: 90%;
+            height: 55vh;
+            position: relative;
+            top: 5%;
+            left: 5%;
+        }
+        /* .c5{
+            width: 50%;
+            height: 60vh;
+            background-color: rgb(0, 128, 255);
+        } */
+        .Itm6{
+            margin-top: 5%;
+            margin-left: 10%;
+            font-size: 50px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .Itm7{
+            margin-top: 3%;
+            padding-left: 10%;
+            font-size: 18px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .video{
+            margin-top: 5%;
+            height: 80vh;
+        }
+        .baner4{
+            width: 100%;
+            height: 60vh;
+            /* background-color: lightcoral; */
+            margin-top: 5%;
+            display: flex;
+            flex-direction: row;
+
+        }
+        .c6{
+            width: 55%;
+            height:60vh;
+            /* background-color: lightslategray; */
+        }
+        .c6 img{
+            width: 80%;
+            height: 55vh;
+            padding-top: 2%;
+            padding-left: 8%;
+        }
+        .c7{
+            width: 45%;
+            height: 61vh;
+            /* background-color:lightgreen; */
+        }
+        .baner5{
+            width: 100%;
+            height: 50vh;
+            margin-top: 3%;
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+        }
+        .c8{
+            width: 25%;
+            height: 50vh;
+            /* background-color: red; */
+            display: flex;
+            flex-direction: column;
+        }
+        .h1{
+            color: white;
+            position: relative;
+            top: 20%;
+            left: 25%;
+            font-size: 30px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .h2{
+            position: relative;
+            top:28%;
+            left: 25%;
+            font-size: 14px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            line-height: 300%;
+        }
+        .c9{
+            width: 25%;
+            height: 50vh;
+            /* background-color: blue; */
+            display: flex;
+            flex-direction: column;
+        }
+        .c10{
+            width: 25%;
+            height: 50vh;
+            /* background-color: orangered; */
+            display: flex;
+            flex-direction: column;
+        }
+        .c11{
+            width: 25%;
+            height: 50vh;
+            /* background-color: blueviolet; */
+            display: flex;
+            flex-direction: row;
+        }
+        .c11 img{
+            width: 10%;
+            height: 4vh;
+            position: relative;
+            top: 5%;
+            left: 8%;
+            padding: 18px;
+            border-radius: 22px;
+        }
+        .baner6{
+            width: 100%;
+            height: 60vh;
+            background-color: black;
+        }
+        .l1{
+            color: white;
+            position: relative;
+            top: 3%;
+            margin-left: 5%;
+            font-size: 13px;
+            line-height: 170%;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .l2{
+            color: white;
+            position: relative;
+            top: 10%;
+            margin-left: 5%;
+            font-size: 13px;
+            line-height: 170%;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .l3{
+            color: white;
+            position: relative;
+            top: 15%;
+            margin-left: 5%;
+            font-size: 13px;
+            line-height: 170%;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+        }
+        .l3 a{
+            color: white;
+            font-size: 13px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .l3 a:hover{
+            color: gray;
+        }
+        .l4{
+            color: white;
+            position: relative;
+            top: 20%;
+            margin-left: 5%;
+            font-size: 13px;
+            line-height: 170%;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+        }
+        .l4 a{
+            color: white;
+            font-size: 13px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .l4 a:hover{
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo"><img src="https://s.yimg.com/fz/api/res/1.2/THCyMkmG3Q53I95wvXivHg--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MzMy/https://s.yimg.com/zb/imgv1/5f784889-bfec-3332-a0a8-3ce21c8a0538/t_500x300" alt="Img"></div>
+        <div class="menu">
+            <div><a href="#">Company</a></div>
+            <div><a href="#">Innovation</a></div>
+            <div><a href="Models.html">Models</a></div>
+            <div><a href="#">Carrers</a></div>
+            <div><a href="Login.HTML">Login</a></div>
+        </div>
+    </div>
+    <div class="baner"><img src="https://www.progress.audi/content/dam/progress/story/2022/187_aes_tom_klocker/1920x1080-desktop-aes-tom-klocker-q4-18722B01.jpg?imwidth=719&imdensity=1" alt="Img">
+         <div class="content">Audi & FC Bayern in Kopenhagen</div>
+         <div class="content1">Join our team as they take the Audi RS e-tron GT FC Bayern concept* for a spin</div>
+         <button class="btn"><a href="#">Read more</a></button>
+    </div>
+    <p class="con">Audi RS e-tron GT FC Bayern concept:Power consumption (combined*) in kWh/100 km: 20.2–19.3 (NEDC) | 22.6–20.6 (WLTP)CO₂ emissions (combined*) in g/km: 0 <br>
+        Information on fuel/power consumption and CO₂ emissions with ranges depending on the selected equipment of the vehicle.</p>
+    <p class="con1">Current topics from the world of Audi</p>
+    <div class="baner1">
+        <div class="c1"><img src="https://www.audi.com/content/dam/gbp2/sustainability-n/people-and-society/corporate-citizenship/audi-one-young-world-summit-2023/1920x1080_oyw2023_A224634_large.jpg?imwidth=477&imdensity=1" alt="Img">
+            <p class="itm">Events  &nbsp; __  &nbsp; 09/02/2023</p>
+            <p class="itm1">One Young World: Audi’s <br> contribution to the future</p>
+            <p class="itm2">One Young World 2023: How Audi and young <br> talents are working together for a more sustainable <br> future. Be inspired and learn more!</p>
+        </div>
+        <div class="c1"><img src="https://www.audi.com/content/dam/gbp2/sustainability-n/environment-and-resources/audi-journey-toward-more-sustainable-production/1920x1080_1920_1080_1.jpg?imwidth=477&imdensity=1" alt="Img">
+            <p class="itm">Value Creation & Production &nbsp; __ &nbsp; 08/23/2023</p>
+            <p class="itm1">Not a matter of location: <br> sustainability at Audi</p>
+            <p class="itm2">More sustainable production at Audi: CO2-neutral locations, decarbonization, aluminum recycling and water management. Find out more.</p>
+        </div>
+    </div>
+    <div class="baner2">
+        <div class="c2">
+            <p class="Itm">Full electric speed ahead</p>
+            <p class="Itm1">Audi recently underpinned its clear course toward electromobility with <br> strong figures and important milestones. How the Four Rings are <br> progressing on their path to successful electrification.</p>
+            <button class="Itm2"><a href="#">Read more</a></button>
+            <p class="Itm3">¹The vehicle shown is a concept vehicle that is not available as a production vehicle.</p>
+        </div>
+        <div class="c3"><img src="https://e0.pxfuel.com/wallpapers/256/46/desktop-wallpaper-abt-audi-rs6-s-audi-rs6-abt.jpg" alt="Img"></div>
+    </div>
+    <div class="Itm4"><img src="https://www.audi.in/content/dam/nemo/models/audi-e-tron-gt/e-tron-gt/my-2022/NeMo-Derivate-Startpage/market-introduction/feature-gallery/13_01.jpg?imwidth=1920&imdensity=1" alt="Img"></div>
+    <p class="Itm5" style="padding-top: 1%;"><b>Fully digital infotainment system: </b><span style="color: rgb(58, 58, 58);">Navigate, communicate, obtain information or enjoy the wide range for infotainment <br> options. Using a tthirlling operating concept.</span></p>
+    <div class="baner3">
+        <div class="c4"><img src="https://www.progress.audi/content/dam/progress/story/2021/episode-one/DS_EP01_AUDI_com_1920x1080.jpg?imwidth=1920&imdensity=1" alt="Img"></div>
+        <div class="c5">
+            <p class="Itm">#Working In Progress</p>
+            <p class="Itm1">Help us to design the mobility of tomorrow. With cars that use state- <br> of-the-art technology to offer an awesome driving experience and, at <br> the same time, pave the way into a future that is digital, sustainable <br> and electric.</p>
+            <button class="Itm2"><a href="#">Read more</a></button>
+        </div>
+    </div>
+    <div class="Itm6">Driving dynamics</div>
+    <p class="Itm7">In combination with the electric drive system, the fully variable quattro drive ensures power is <br> distributed intelligently to the individual wheels. When sufficient traction is available, it sends <br> power primarily to the front axle.</p>
+    <video src="https://www.audi.in/content/dam/nemo/models/audi-e-tron-gt/e-tron-gt/my-2022/NeMo-Derivate-Startpage/market-introduction/video-stage-large/AVPCONPRO-2147_DrivingScene_EtronGT_Mobile_LQ.mp4#t=0.001" autoplay controls muted class="video" width="100%" ></video>
+    <div class="baner4">
+        <div class="c6"><img src="https://www.audi.com/content/dam/gbp2/models/1920x1080-desktop-models-teaser-q4_ed1_2021_2543.jpg?imwidth=792&imdensity=1" alt="Img"></div>
+        <div class="c7">
+            <p class="Itm">At Audi you’ll find the right vehicle for every requirement</p>
+            <p class="Itm1">Sporty, luxurious, or compact – at Audi you will find the right vehicle for every requirement. Discover and configure our series models now.</p>
+            <button class="Itm2"><a href="#">Discover all models</a></button>
+        </div>
+    </div>
+    <div class="baner5">
+        <div class="c8">
+            <p  class="h1">Topics</p>
+            <p class="h2">Company</p>
+            <p class="h2">Innovation</p>
+            <p class="h2">Models</p>
+            <p class="h2">Brands</p>
+            <p class="h2">Career</p>
+        </div>
+        <div class="c9">
+            <p class="h1">AUDI AG</p>
+            <p class="h2">Audi Reports 2022</p>
+            <p class="h2">Documents & Policies</p>
+            <p class="h2">Financial Calender</p>
+            <p class="h2">Profile</p>
+        </div>
+        <div class="c10">
+            <p class="h1">Services</p>
+            <p class="h2">myAudi</p>
+            <p class="h2">Press</p>
+            <p class="h2">Contact</p>
+            <p class="h2">Job portal</p>
+        </div>
+        <div class="c11"><img src="https://tse1.mm.bing.net/th?id=OIP.yLx1X8O52AZvD6tTPmf3LgAAAA&pid=Api&P=0&h=220" alt="Img"> <img src="https://cdn.freebiesupply.com/images/large/2x/instagram-logo-white-on-black.png" alt="Img"> <img src="http://www.freeiconspng.com/uploads/images-for--facebook-icon-png-27.png" alt="Img"> <img src="https://logodix.com/logo/395125.png" alt="Img"></div>
+    </div>
+    <div class="baner6">
+        <p class="l1">* The stated consumption and emissions values were determined in accordance with the legally stipulated measurement procedure. The WLTP test cycle completely replaced the NEDC test cycle with effect <br> from 1 January 2022. As a result, no NEDC values are available for vehicles with a type approval issued after this date.</p>
+        <p class="l2">The values do not refer to an individual vehicle and are not part of the offer; instead, they are solely for the purpose of comparing between different types of vehicles. Optional equipment and accessories <br>(attachments, tyre formats etc.) may alter relevant vehicle parameters such as the weight, rolling resistance and aerodynamics and, alongside weather and traffic conditions and individual driving behaviour, <br>may influence the fuel consumption, electricity consumption, CO2 emissions and performance values of a vehicle.</p>
+        <p class="l3">Due to the more realistic test conditions, fuel consumption and CO2 emissions values will in many cases be higher in accordance with the WLTP than in accordance with the NEDC. There may have been <br>corresponding changes to vehicle taxation since 1 September 2018 as a result of this. You can find further information on the differences between the WLTP and the NEDC at <a href="https://www.audi.co.uk/uk/web/en/audi-world/wltp.html">https://www.audi.co.ul/wltp.</a></p>
+        <p class="l4">Further information on the official fuel consumption and the official, specific CO2 emissions of new passenger car models can be found in the “Guide on the fuel economy, CO2 emissions and power <br>consumption of all new passenger car models”, available free of charge from all sales outlets and from DAT Deutsche Automobil Treuhand GmbH, Hellmuth-Hirth-Str. 1, 73760 Ostfildern, <br>Germany or desktop-wallpaper-abt-audi-rs6-s-audi-rs6-a  <a href="https://www.dat.de/">www.dat.de.</a></p>
+    </div>
+</body>
+</html>
